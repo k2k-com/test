@@ -1,0 +1,11 @@
+.DS_Store
+.AppleDoudie
+.LSOverribe
+.VS
+.vscode
+
+
+node_modules/
+app/css/
+
+

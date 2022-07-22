@@ -1,0 +1,49 @@
+@import "vars";
+@import "fonts";
+@import "global";
+@import "libs";
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 27px;
+}
+
+.menu__list {
+    &-item {
+        display: inline-block;
+        text-transform: uppercase;
+        @include f700;
+    }
+}
+.menu__list-item+.menu__list-item{
+    margin-left: 15px;
+}
+.menu{
+    padding-right: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media";
