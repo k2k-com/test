@@ -2,48 +2,77 @@
 @import "fonts";
 @import "global";
 @import "libs";
+@import "reset";
 
-.header__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 27px;
-}
+// start-header
+.header {
+    color: #363838;
+    opacity: 0.85;
 
-.menu__list {
-    &-item {
-        display: inline-block;
-        text-transform: uppercase;
-        @include f700;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
     }
 }
-.menu__list-item+.menu__list-item{
-    margin-left: 15px;
-}
-.menu{
-    padding-right: 25px;
+
+.logo {
+    margin: 0 auto;
 }
 
+.menu {
+    padding-right: 15px;
 
+    &__list {
+        display: flex;
+    }
 
+    &__list-item {
+        padding-left: 35px;
+        padding-right: 45px;
+    }
 
+    &__list-link {
+        @include f700;
+        line-height: 22px;
+    }
+}
 
+// fin-header
+// start-footer
+.footer {
+    &__content {
+        padding: 60px 0 80px;
+        background-color: #dfdfdf;
+    }
 
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info{
+        flex-basis: 540px;
+    }
 
+    &__info-title {
+        @include f700;
+        color: $title;
+        line-height: 23px;
+    }
 
+    &__info-text {
+        margin-bottom: 16px;
+    }
 
+    &__copir {
+        background-color: $title;
+        color: #A1A1A1;
+        text-align: center;
+        padding: 43px 10px;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+// fin-footer
 
 @import "media";

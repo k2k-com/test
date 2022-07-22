@@ -1,9 +1,7 @@
-@mixin f300 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-}
+$title: #363838;
+$text: #5a5a5a;
 
 @mixin f700 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
