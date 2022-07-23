@@ -1,6 +1,16 @@
 $title: #363838;
 $text: #5a5a5a;
 
+@mixin f400 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+@mixin f600 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
 @mixin f700 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;

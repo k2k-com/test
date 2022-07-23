@@ -30,3 +30,11 @@
     margin: 0 auto;
     padding: 0 15px;
   }
+
+  .btn{
+    padding: 6px 57px;
+    background-color: $title;
+    border-radius: 20px;
+    color: #dfdfdf;
+    @include f600;
+  }
