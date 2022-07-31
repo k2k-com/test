@@ -1,6 +1,11 @@
   html,
   body {
     height: 100%;
+    
+  }
+
+  html {
+   overflow-x: hidden; 
   }
 
   body {
@@ -31,10 +36,41 @@
     padding: 0 15px;
   }
 
-  .btn{
+  .container-fluid {
+    max-width: 1920px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .btn {
     padding: 6px 57px;
     background-color: $title;
     border-radius: 20px;
     color: #dfdfdf;
     @include f600;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      padding: 0 15px;
+    }
+
+    button {
+      font-size: 0;
+      background-color: $title;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    li.slick-active {
+      button {
+        background-color: $accent;
+      }
+
+    }
   }
