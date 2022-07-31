@@ -13,6 +13,13 @@ $(function () {
         slidesToShow: 1,
         speed: 900,
     });
+    $('.contact-slider__inner').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 10,
+        slidesToScroll: 10,
+    });
 
     var mixer = mixitup('.gallery__inner', {
         load: {

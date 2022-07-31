@@ -911,16 +911,69 @@
         border-radius: 20px;
         border: 1px solid rgba($color: $text, $alpha: 0.5);
         margin-bottom: 13px;
+
+        &::placeholder {
+            @include f400;
+            font-size: 16px;
+            line-height: 27px;
+            color: $text;
+            opacity: 0.7;
+        }
     }
 
     &__form-area {
         padding: 15px;
         width: 100%;
         border-radius: 20px;
-        height: 126px;
+        min-height: 126px;
         border: 1px solid rgba($color: $text, $alpha: 0.5);
         margin-bottom: 16px;
         resize: none;
+
+        &::placeholder {
+            @include f400;
+            font-size: 16px;
+            line-height: 27px;
+            color: $text;
+            opacity: 0.7;
+        }
+    }
+}
+
+.contact-slider {
+    margin-bottom: 86px;
+
+    &__link {
+        text-align: center;
+        position: relative;
+        margin-bottom: 30px;
+        &:hover{
+            .contact-slider__title{
+                opacity: 1;
+            }
+        }
+    }
+
+    &__img {
+        width: 170px;
+        height: 170px;
+        object-fit: cover;
+
+    }
+
+    &__title {
+        font-size: 16px;
+        line-height: 22px;
+        @include f700;
+        color: $title;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        background-color: rgba($color: #fff, $alpha: 0.6);
+        transition: all .8s;
+        opacity: 0;
     }
 }
 
