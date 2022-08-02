@@ -21,6 +21,14 @@ $(function () {
         slidesToScroll: 10,
     });
 
+    $('.article-slider-box').slick({
+        arrows: true,
+        PrevArrows: '<button class="article-slider-box__arrow article-slider-box__prev" type="button"><img src="images/icons/prev.svg" alt="prev"></button>',
+        NextArrows: '<button class="article-slider-box__arrow article-slider-box__next" type="button"><img src="images/icons/next.svg" alt="next"></button>'
+
+    });
+
+
     var mixer = mixitup('.gallery__inner', {
         load: {
             filter: '.bedroom'

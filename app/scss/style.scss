@@ -61,8 +61,7 @@
 .breadcrumbs {
     background-color: rgba($color: #dfdfdf, $alpha: .5);
     padding: 13px 14px;
-    position: absolute;
-    width: 100%;
+    position: relative;
 
     &__list {
         display: flex;
@@ -689,6 +688,7 @@
         background-size: cover;
         text-align: center;
         padding: 160px 0;
+        margin-top: -53px;
     }
 
     &__prev-title {
@@ -850,6 +850,8 @@
 // start-contact
 .map {
     margin-bottom: 50px;
+    margin-top: -53px;
+
 }
 
 .contact {
@@ -947,8 +949,9 @@
         text-align: center;
         position: relative;
         margin-bottom: 30px;
-        &:hover{
-            .contact-slider__title{
+
+        &:hover {
+            .contact-slider__title {
                 opacity: 1;
             }
         }
@@ -974,6 +977,203 @@
         background-color: rgba($color: #fff, $alpha: 0.6);
         transition: all .8s;
         opacity: 0;
+    }
+}
+
+// fin-contact
+// start-blog
+.blog {
+    padding: 60px 0 100px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__items {
+        max-width: 730px;
+    }
+
+    &__item {
+        margin-bottom: 80px;
+    }
+
+    &__tem-img {
+        min-width: 730px;
+    }
+
+    &__item-info {
+        padding: 25px 0 10px;
+        font-size: 16px;
+        @include f600;
+        color: #707070;
+    }
+
+    &__item-title {
+        font-size: 24px;
+        line-height: 38px;
+        @include f700;
+        margin-bottom: 6px;
+        color: $title;
+    }
+
+    &__blockquote {
+        background-color: rgba($color: #DFDFDF, $alpha: 0.5);
+        font-size: 24px;
+        line-height: 38px;
+        font-style: italic;
+        color: $title;
+        text-align: center;
+        padding: 54px 64px;
+        margin-bottom: 50px;
+        font-weight: 300;
+    }
+
+    &__blockquote-author {
+        font-size: 16px;
+        line-height: 22px;
+        @include f700;
+        color: $title;
+        margin-top: 23px;
+        padding-top: 23px;
+        position: relative;
+        font-style: normal;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            margin: 0 auto;
+            width: 200px;
+            height: 1px;
+            border-radius: 1px;
+            background-color: #8F8D8D;
+        }
+    }
+
+    &__item-popup {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.article-slider-box {
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.article-popup {
+    &__box {
+        position: relative;
+    }
+}
+
+.aside {
+    margin-left: 30px;
+    max-width: 350px;
+
+    &__search {
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    &__search-input {
+        padding: 6px 45px 6px 15px;
+        border-radius: 20px;
+        border: 1px solid rgba($color: $text, $alpha: 0.7);
+        display: block;
+        width: 100%;
+
+        &::placeholder {
+            @include f400;
+            font-size: 16px;
+            line-height: 27px;
+            color: $text;
+            opacity: 0.7;
+        }
+    }
+
+    &__search-btn {
+        position: absolute;
+        top: 12px;
+        right: 20px;
+    }
+}
+
+.blog__categories {
+    margin-bottom: 36px;
+
+    &-title {
+        font-size: 16px;
+        line-height: 23px;
+        @include f700;
+        color: $title;
+    }
+
+    &-item {
+        margin-top: 12px;
+    }
+}
+
+.recent-posts {
+    margin-bottom: 36px;
+
+    &__title {
+        font-size: 16px;
+        line-height: 23px;
+        @include f700;
+        color: $title;
+    }
+
+    &__item {
+        margin-top: 12px;
+    }
+
+    &__date,
+    &__aurhor {
+        font-size: 14px;
+        line-height: 28px;
+        color: #A1A1A1;
+    }
+}
+
+.blog__tags {
+    margin-bottom: 36px;
+
+    &-title {
+        font-size: 16px;
+        line-height: 23px;
+        @include f700;
+        color: $title;
+        margin-bottom: 16px;
+    }
+
+    &-link {
+        padding: 0 12px;
+        border-radius: 20px;
+        border: 1px solid rgba($color: $text, $alpha: 0.7);
+        font-size: 14px;
+        @include f600;
+        color: #8F8D8D;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+}
+
+.blog__social {
+    display: flex;
+
+    .blog__social-item {
+        &+.blog__social-item {
+            margin-left: 25px;
+        }
     }
 }
 
